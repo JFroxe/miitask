@@ -1,0 +1,31 @@
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  overflow: hidden; /* importante */
+  font-family: sans-serif;
+}
+a {
+  color: white !important;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+
+:root {
+  --bg-color: white;
+  --text-color: black;
+}
+
+[data-theme="dark"] {
+  --bg-color: #121212;
+  --text-color: white;
+}
+
+body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  transition: background-color 0.3s ease, color 0.3s ease;
+  overflow: hidden; /* importante */
+}
